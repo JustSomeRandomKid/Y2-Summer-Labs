@@ -13,7 +13,8 @@ def dislikeAVideo(dict):
     return dict
 
 def addAComment(youtubeVideo,username,commentText):
-    youtubeVideo["comments"][username] = commentText
+    youtubeVideo["comments"]["username"] = username
+    youtubeVideo["comments"]["comment_text"] = commentText
     return 
 
 vid = createYoutubeVideo("CS is the best we are better then the rest ahoo ahoo ahoo ahoo ahoo","cs for life!")
