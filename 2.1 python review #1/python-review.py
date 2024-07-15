@@ -47,3 +47,15 @@ print("\nThe hottest temperature was", highestTemp, "on", highestTempDay)
 print("The lowest temperature was", lowestTemp, "on", lowestTempDay)
 print("\nThe average temprature was:",avgWeekTemp)
 print("The days with above average tempratures were:",aboveAvg)
+
+organizedTempList = []
+
+for yay in range(6):
+    currentLowestTemp = temperatures[0]
+    for temp in temperatures:
+        if temp < currentLowestTemp:
+            currentLowestTemp = temp
+    organizedTempList.append(currentLowestTemp)
+    temperatures.remove(currentLowestTemp)       
+
+print(organizedTempList)
