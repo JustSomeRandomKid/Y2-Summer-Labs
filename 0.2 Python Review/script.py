@@ -1,5 +1,5 @@
 def createYoutubeVideo(title,description):
-    video = {"title":title,"description":description,"likes":0,"dislikes":0,"comments":{"username":""}}
+    video = {"title":title,"description":description,"likes":0,"dislikes":0,"comments":{"username":"","comment_text":""}}
     return video
 
 def likeAVideo(dict):
@@ -17,4 +17,9 @@ def addAComment(youtubeVideo,username,commentText):
     return 
 
 vid = createYoutubeVideo("CS is the best we are better then the rest ahoo ahoo ahoo ahoo ahoo","cs for life!")
-print(vid)
+print("Title:",vid["title"])
+print("Description:",vid["description"])
+print("\n",vid["likes"],"people liked this :)")
+print(vid["dislikes"],"people disliked this :(")
+print("Comments:")
+print(vid["comments"]["username"],":", vid["comments"]["comment_text"])
