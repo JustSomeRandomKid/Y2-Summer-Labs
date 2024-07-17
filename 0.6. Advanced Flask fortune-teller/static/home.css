@@ -1,0 +1,13 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    background-image: url("https://dl.dropbox.com/scl/fi/z93n57u5cssbc7agylw55/pic-1.webp?rlkey=lucjxedqjw7wex5e0m67msbou&st=aasb1jix&dl=0");
+}
+h1{
+    margin-bottom: 0;
+}
+p{
+    margin-top: 20px;
+}
