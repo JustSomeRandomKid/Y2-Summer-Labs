@@ -9,8 +9,8 @@ def home():
     else:
         birthMonth = request.form['textCont']
         return redirect(url_for('fortune',birthM = birthMonth))
-
-@app.route('/fortune/<birthM>',methods=['GET','POST'])
+    
+@app.route('/fortune/<birthM>')
 def fortune(birthM):
     fortunes=['today will be the best day of your life!',
               'you will break a leg today ):',
@@ -28,7 +28,6 @@ def fortune(birthM):
         finalFortune=fortunes[len(birthM)-1]
 
     return render_template("fortune.html",fortune = finalFortune)
-
 
 
 if __name__ == '__main__':
