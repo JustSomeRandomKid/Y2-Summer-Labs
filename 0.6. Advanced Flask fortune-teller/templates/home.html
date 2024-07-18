@@ -6,12 +6,9 @@
         <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet" type="text/css">
     </head>
     <body class="body">
-        <h1>Welcome to my fortune telling website</h1>
+        <h1>Welcome to my fortune telling website:{{username}}</h1>
         <p>The only legit fortune telling website out there (;</p>
         <br><br><br><br><br><br><br><br><br><br><br>
-        <form action="/home" method="post">
-            <input name="textCont" type="text" placeholder="Tell me your birth month">
-            <input name="button" type="submit">
-        </form>
+        <a href="/fortune/{{birthMonth}}">see your fortune here</a>
     </body>
 </html>

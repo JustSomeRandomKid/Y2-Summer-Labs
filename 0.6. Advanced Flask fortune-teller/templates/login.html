@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Your Fortune</title>
+        <link href="{{ url_for('static', filename='login.css') }}" rel="stylesheet" type="text/css">
+    </head>
+    <body class="body">
+        <form action="/" method="post">
+            <input name="userName" type="text" placeholder="What is your username">
+            <input name="birth" type="text" placeholder="Tell me your birth month">
+            <input name="button" type="submit">
+        </form>
+    </body>
+</html>
