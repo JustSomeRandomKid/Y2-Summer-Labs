@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+    </head>
+    <body class="body">
+        <h1>Welcome to my amazing project:{{user}}</h1>
+        <form action="/home" method="post">
+            <input type="text" name="quote" placeholder="Enter your quote">
+            <input type="text" name="quoteWriter" placeholder="Enter who wrote the quote">
+            <input type="submit" value="submit">
+        </form>
+        <form action="/signOut" method="get">
+            <input type="submit" value="signout">
+        </form>
+    </body>
+</html>

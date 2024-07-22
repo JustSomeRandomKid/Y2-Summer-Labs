@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Display</title>
+    </head>
+    <body class="body">
+        <h>here are your quotes:</h>
+        <ul>
+            {%for quote in quotes.values()%}
+            <li>quote:{{quote['quote']}} said by: {{quote['saidBy']}}</li>
+            {%endfor%}
+        </ul>
+    </body>
+</html>
