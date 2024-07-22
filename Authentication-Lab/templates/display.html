@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fortune Teller</title>
+        <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet" type="text/css">
+    </head>
+    <body class="body">
+        <h>here are your quotes:</h>
+        <ul>
+            {%for quote in quotes%}
+            <li>{{quote}}</li>
+            {%endfor%}
+        </ul>
+    </body>
+</html>
